@@ -1,6 +1,6 @@
 FROM rockylinux/rockylinux:9
 
-RUN dnf install -y rpmdevtools rpmlint ksh git \
+RUN dnf install -y rpmdevtools rpmlint ksh git asciidoc xmlto \
     && mkdir /rpmbuild \
     && dnf clean dbcache 
 
