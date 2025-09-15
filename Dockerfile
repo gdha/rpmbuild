@@ -1,6 +1,6 @@
 # docker build -t rpmbuild .          (to build image)
 # docker run -it rpmbuild /bin/bash   (to inspect)
-FROM rockylinux/rockylinux:9
+FROM rockylinux/rockylinux:10
 
 RUN dnf install -y epel-release
 RUN dnf install -y rpmdevtools rpmlint ksh git asciidoc xmlto \
